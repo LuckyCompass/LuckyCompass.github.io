@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="rest_framework,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="LK的小书架">
-<meta property="og:url" content="http://yoursite.com/tags/Mysql/index.html">
+<meta name="description" content="1234u_id = request.META.get(&amp;apos;HTTP_COOKIE&amp;apos;).split(&amp;apos;=&amp;apos;)[1]data = request.data.copy()data.__setitem__(&amp;apos;user_id&amp;apos;, int(u_id))ser = ShopInfoSerializer(data=data) 在rest_framewor">
+<meta name="keywords" content="rest_framework">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rest_framework踩过的坑">
+<meta property="og:url" content="http://yoursite.com/2018/12/27/rest-framework踩过的坑/index.html">
 <meta property="og:site_name" content="LK的小书架">
+<meta property="og:description" content="1234u_id = request.META.get(&amp;apos;HTTP_COOKIE&amp;apos;).split(&amp;apos;=&amp;apos;)[1]data = request.data.copy()data.__setitem__(&amp;apos;user_id&amp;apos;, int(u_id))ser = ShopInfoSerializer(data=data) 在rest_framewor">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-27T08:01:57.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LK的小书架">
+<meta name="twitter:title" content="rest_framework踩过的坑">
+<meta name="twitter:description" content="1234u_id = request.META.get(&amp;apos;HTTP_COOKIE&amp;apos;).split(&amp;apos;=&amp;apos;)[1]data = request.data.copy()data.__setitem__(&amp;apos;user_id&amp;apos;, int(u_id))ser = ShopInfoSerializer(data=data) 在rest_framewor">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Mysql/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/27/rest-framework踩过的坑/">
 
 
 
 
 
-  <title>Tag: Mysql | LK的小书架</title>
+  <title>rest_framework踩过的坑 | LK的小书架</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,52 +219,171 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Mysql<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/27/rest-framework踩过的坑/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lucky Compass">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LK的小书架">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/12/07/Mysql数据库操作/" itemprop="url">
-              
-                <span itemprop="name">Mysql数据库操作</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">rest_framework踩过的坑</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-07T22:29:43+08:00" content="2018-12-07">
-          12-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-27T15:56:19+08:00">
+                2018-12-27
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Django/" itemprop="url" rel="index">
+                    <span itemprop="name">Django</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">u_id = request.META.get(&apos;HTTP_COOKIE&apos;).split(&apos;=&apos;)[1]</span><br><span class="line">data = request.data.copy()</span><br><span class="line">data.__setitem__(&apos;user_id&apos;, int(u_id))</span><br><span class="line">ser = ShopInfoSerializer(data=data)</span><br></pre></td></tr></table></figure>
+<p>在rest_framework中,REQUEST类的data是querydict,是不可变的类型,但是它的浅拷贝对象可以使用__setitem__</p>
+<p>来添加属性</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/rest-framework/" rel="tag"># rest_framework</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/26/serilaizer添加自定义字段/" rel="next" title="serilaizer添加自定义字段">
+                <i class="fa fa-chevron-left"></i> serilaizer添加自定义字段
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -267,6 +391,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -488,6 +616,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
